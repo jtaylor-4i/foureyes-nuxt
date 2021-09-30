@@ -1,7 +1,7 @@
-<template>
-  <v-app>
-    <v-card class="overflow-hidden">
-      <v-app-bar
+<template lang="pug">
+  v-app
+    v-card.overflow-hidden
+      v-app-bar(
         absolute
         shrink-on-scroll
         color="#6A76AB"
@@ -10,47 +10,39 @@
         fade-img-on-scroll
         scroll-target="#scrolling-techniques-3"
         app
-      >
-        <v-app-bar-title>
-          FOUREYES LABS
-        </v-app-bar-title>
-        <v-spacer></v-spacer>
-        <template v-slot:extension>
-          <v-tabs
+        height="200"
+        )
+        v-app-bar-title
+        v-spacer
+        template(v-slot:extension)
+          v-tabs(
             fixed-tabs
             color="#fff"
             right
-          >
-            <v-tab>
-              <NuxtLink to="/">HOME</NuxtLink>
-            </v-tab>
-            <v-tab>
-              <NuxtLink to="/services">SERVICES</NuxtLink>
-            </v-tab>
-            <v-tab>
-              <NuxtLink to="/about">ABOUT</NuxtLink>
-            </v-tab>
-            <v-tab>
-              <NuxtLink to="/contact">CONTACT</NuxtLink>
-            </v-tab>
-          </v-tabs>
-        </template>
-      </v-app-bar>
-      <v-main>
-        <v-sheet
+          )
+            v-tab
+              NuxtLink.link(to="/") HOME
+            v-tab
+              NuxtLink.link(to="/services") SERVICES
+            v-tab
+              NuxtLink.link(to="/about") ABOUT
+            v-tab
+              NuxtLink.link(to="/contact") CONTACT
+      v-main
+        v-sheet(
           id="scrolling-techniques-3"
           class="overflow-y-auto"
-          max-height="100vh"
-        >
-          <v-container>
-            <Nuxt/>
-
-          </v-container>
-        </v-sheet>
-      </v-main>
-      <v-footer app>
-        <h3>FOUREYESLABS</h3>
-      </v-footer>
-    </v-card>
-  </v-app>
+          max-height="100vh")
+          v-container
+            Nuxt
+      v-footer(app)
+        h3 FOUREYESLAB
 </template>
+
+<style scoped>
+  .link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+  }
+</style>
