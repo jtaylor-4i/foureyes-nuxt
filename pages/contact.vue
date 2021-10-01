@@ -7,10 +7,43 @@
           md="4"
         )
           v-text-field(
-            v-model="firstname"
+            v-model="name"
+            :rules="nameRules"
+            label="Name"
+            required
+          )
+      v-row
+        v-col(
+          cols="12"
+          md="4"
+        )
+          v-text-field(
+            v-model="email"
+            :rules="nameRules"
+            label="Email"
+            required
+          )
+      v-row
+        v-col(
+          cols="12"
+          md="4"
+        )
+          v-text-field(
+            v-model="phone"
             :rules="nameRules"
             :counter="10"
-            label="First Name"
+            label="Phone Number"
+            required
+          )
+      v-row
+        v-col(
+          cols="12"
+          md="4"
+        )
+          v-text-field(
+            v-model="message"
+            :rules="nameRules"
+            label="What service?"
             required
           )
 </template>
