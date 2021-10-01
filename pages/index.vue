@@ -16,9 +16,9 @@
       h1.text-center.foureyes IMAGINE - INVENT - INNOVATE - IMPROVE
 
     v-row
-      v-col.purple.lighten-5
-        h2 Our Mission
-        p.
+      v-col
+        h2.text-center Our Mission
+        p.text-center.
           We created Foureyes Labs with the goal to help people and organizations innovate and
           improve their existing technology projects and infrastructure and to imagine and invent
           new ideas through technology. Bringing that to life through those 4 I’s, with a
@@ -44,9 +44,9 @@
             height="100%"
             width="100%"
           )
-      v-col.purple.lighten-5
-        h2 Why Foureyes
-        p.
+      v-col
+        h2.text-center Why Foureyes
+        p.text-center.
           At Foureyes Labs, our technology leaders and developers have 35+ years combined
           experience and specialize in creating innovative solutions, driven to solve problems
           through platform development, DevOps, system administration, back-end development,
@@ -59,9 +59,9 @@
           integrations, and more.
 
     v-row
-      v-col.purple.lighten-5
-        h2 Some of our happy clients
-        p.
+      v-col
+        h2.text-center Some of our happy clients
+        p.text-center.
           Do we have any testimonials to put here? Any ideas on what we want to put on this page
           so that we can maybe explain what we want the people who visit this site to be able to
           see how our clients have reacted to our services.

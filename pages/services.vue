@@ -37,10 +37,6 @@
       v-card
         h4.text-center Our clients have needs that span across all levels of the software development lifecycle, from development to deployed. We assist in all aspects in delivering software applications including DevOps, integration, architecture, development and design
     v-row
-      v-col.purple.lighten-5
-        h2 DevOps
-        p.
-          With our combination of cultural philosophies, knowledge, and team we can increase an organizations ability to deliver applications and services with high quality. Guiding the evolution and improving a company's product so that they may produce at a faster pace.
 
       v-col
         v-sheet(color="white", elevation="3", height="500", shaped, width="100%")
@@ -50,10 +46,15 @@
             height="100%"
             width="100%"
           )
+      v-col
+        h2.text-center DevOps
+        p.text-center.
+          With our combination of cultural philosophies, knowledge, and team we can increase an organizations ability to deliver applications and services with high quality. Guiding the evolution and improving a company's product so that they may produce at a faster pace.
+
     v-row
-      v-col.purple.lighten-5
-        h2 UI/UX Design
-        p.
+      v-col
+        h2.text-center UI/UX Design
+        p.text-center.
           We have a passion for creativity and when it comes to UI/UX design we continue to hone that passion and create exciting products for our customers. To maximize utilization and customer satisfaction of our designs, we take into consideration multiple target devices and operating systems
 
       v-col
@@ -65,11 +66,6 @@
             width="100%"
           )
     v-row
-      v-col.purple.lighten-5
-        h2 Data and Analytics
-        p.
-          We love data. The process of identifying patterns and trends, analyzing these results and providing our findings to our clients so that we can establish the business needs and use this data to work on those needs.
-
       v-col
         v-sheet(color="white", elevation="3", height="500", shaped, width="100%")
           v-img(
@@ -78,5 +74,9 @@
             height="100%"
             width="100%"
           )
+      v-col
+        h2.text-center Data and Analytics
+        p.text-center.
+          We love data. The process of identifying patterns and trends, analyzing these results and providing our findings to our clients so that we can establish the business needs and use this data to work on those needs.
 
 </template>
